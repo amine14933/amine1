@@ -40,6 +40,10 @@ git commit -m "add all"
 
 12. Sur une nouvelle branche add_images, créez un fichier "ignore.txt" et ignorez le. Vous ferez ensuite un capture d'écran qui montre que le 
 fichier est bien ignoré et vous ajouterez cette capture dans un dossier "images". Vous pourrez ensuite commit les changements.
+
+checkout -b add_image
+
+
 13. Faites une capture d'écran de vos branches et ajoutez la au dossier image et faites un commit.
 14. Mergez vos branches feature et add_images dans master. 
 15. Faites une capture d'écran de l'historique de vos commit sur master, ajoutez la au dossier image et faites un commit. 
