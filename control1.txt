@@ -41,14 +41,32 @@ git commit -m "add all"
 12. Sur une nouvelle branche add_images, créez un fichier "ignore.txt" et ignorez le. Vous ferez ensuite un capture d'écran qui montre que le 
 fichier est bien ignoré et vous ajouterez cette capture dans un dossier "images". Vous pourrez ensuite commit les changements.
 
-checkout -b add_image
-
-
+ checkout -b add_image    ;;;
 13. Faites une capture d'écran de vos branches et ajoutez la au dossier image et faites un commit.
+
 14. Mergez vos branches feature et add_images dans master. 
+
+git switch feature
+git merge add_image
+git switch master
+git merge feature
+
 15. Faites une capture d'écran de l'historique de vos commit sur master, ajoutez la au dossier image et faites un commit. 
+
 16. Créez un repo en ligne dans lequel vous pousserez votre dossier. 
+
+echo "# amine1" >> README.md
+git init
+git add README.md
+git commit -m "first commits"
+git branch -M master
+git remote add origin https://github.com/amine14933/amine1.git
+git push  origin master
+
 17. Sur GitHub, créez un nouveau fichier origin.txt sur la branche master. Puis tirez le dans votre repo local.
+
+git pull origin master (apres avoir crée origin.txt sur github)
+
 18. Créez une nouvelle branche feedback, ajoutez un fichier feedback.txt dans lequel vous écrirez votre feedback sur le cours
 (vous ne serez ni avantagé ni pénalisé selon le feedback). Créez ensuite une Pull Request et mergez la dans master depuis GitHub.
 
